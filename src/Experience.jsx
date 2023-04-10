@@ -3,11 +3,13 @@ import { DirectionalLightHelper } from 'three'
 import { OrbitControls, useHelper } from '@react-three/drei'
 import { Perf } from 'r3f-perf';
 import Floor from './Floor'
+import Door from './Door'
 
 
 export default function Experience(){
     const direccionalLightRef = useRef();
 
+    //Importamos el useHelper para que nos de una guía de cómo apunta la luz
     useHelper(direccionalLightRef, DirectionalLightHelper, 1);
 
     return <>
@@ -20,6 +22,7 @@ export default function Experience(){
 
         Importamos el piso
         <Floor/>
+        <Door/>
     </>
 
 
