@@ -16,7 +16,7 @@ const cameraSettings = {
 }
 
 
-
+//Canvas habilita las sombras
 root.render(
   <Canvas camera={cameraSettings} shadows={true}>
   <Experience />
